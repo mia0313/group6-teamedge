@@ -6,5 +6,5 @@ Team Edge Final Project!
 
 
 
-
+Joseph Nartey
 Ayan Cooper
