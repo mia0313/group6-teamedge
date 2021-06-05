@@ -2,6 +2,67 @@
     line-height: auto;
 }
 
-body {
-    background-color: yellow;
+h1{
+    color: magenta;
+    text-align: center;
 }
+
+body {
+    background-image: url(https://eskipaper.com/images/cool-backgrounds-4.jpg);
+}
+
+p {
+    color: white;
+    text-align: center;
+}
+
+.j-title {
+    align-self: center;
+}
+
+.j-entry { 
+    display: inline-block; 
+    width: 210px; 
+    text-align: right;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+
+
+
+
+/*
+ .j-entry {
+    line-height: auto;
+}
+
+body {
+    background-image: url(https://eskipaper.com/images/cool-backgrounds-4.jpg);
+}
+
+p {
+    color: white;
+    text-align: center;
+}
+
+.j-title {
+    align-self: center;
+}
+
+.j-entry { 
+    display: inline-block; 
+    width: 210px; 
+    text-align: right;
+}
+
+.container {
+    display: flex;
+}
+
+*/
