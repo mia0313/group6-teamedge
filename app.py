@@ -22,7 +22,7 @@ def sent():
     entry = request.form['journal-entry-text']
 
     # Connect to DB and Insert into DB Columns
-    conn.sqlite3.connect('./static/data/journal-entries.db')
+    conn = sqlite3.connect('./static/data/journal-entries.db')
     curs = conn.cursor()
     curs.execute("INSERT INTO entries (entry_titles, entry_dates, entries) VALUES ((?), (?), (?))", (title, date, entry))
     conn.commit()
