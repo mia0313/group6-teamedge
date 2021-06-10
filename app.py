@@ -34,7 +34,6 @@ def display_entry():
 @app.route('/all-entries')
 def all_entries():
     if request.method == 'POST':
-
         title = request.form['journal-entry-title']
         date = request.form['journal-entry-date']
         text = request.form['journal-entry-text']
@@ -56,7 +55,7 @@ def all_entries():
             entries.append(entry)
             print(entry)
         conn.close()
-        return render_template('completed-entries.html', entries = entries)    
+    return render_template('completed-entries.html', entry = entry)    
     
 
 

@@ -1,5 +1,8 @@
 .j-entry {
     line-height: auto;
+    display: inline-block; 
+    width: 210px; 
+    text-align: right;
 }
 
 h1{
@@ -18,12 +21,6 @@ p {
 
 .j-title {
     align-self: center;
-}
-
-.j-entry { 
-    display: inline-block; 
-    width: 210px; 
-    text-align: right;
 }
 
 .container {
