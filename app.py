@@ -29,8 +29,7 @@ def display_entry():
 
     conn.close()
     return render_template('added-entry.html', entry_titles = title, entry_dates = date, entry_texts = text)  
-
-
+        
 
 @app.route('/all-entries')
 def all_entries():
