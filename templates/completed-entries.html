@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Entries</title>
+</head>
+<body>
+    <ul>
+        {% for entry in entries %}
+            <p>
+                {{entry ['entry_dates']}} : {{['entry_titles']}}
+            </p>
+        {% endfor %}
+    </ul>
+</body>
+</html>
