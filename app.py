@@ -22,7 +22,7 @@ def display_entry():
         title = request.form['journal-entry-title']
         date = request.form['journal-entry-date']
         entry = request.form['journal-entry-text']
-        conn = sqlite3.connect('./static/data/journal-entries.db')
+        conn = sqlite3.connect('./static/data/journal_entries.db')
         curs = conn.cursor()
         curs.execute("INSERT INTO entries(entry_titles, entry_dates, entries) VALUES ((?), (?), (?))", (title, date, entry))
         conn.commit()
@@ -34,7 +34,7 @@ def display_entry():
 
 @app.route('/all-entries')
 def all_entries():
-    conn =  sqlite3.connect('./static/data/journal-entries.db')
+    conn =  sqlite3.connect('./static/data/journal_entries.db')
     curs = conn.cursor()
     entries = []
     rows = curs.execute("SELECT * FROM entries ORDER BY entry_dates ASC;")
@@ -52,7 +52,7 @@ def all_entries():
         entry = request.form['journal-entry-text']
 
     # Connect to DB and Insert into DB Columns
-        conn = sqlite3.connect('./static/data/journal-entries.db')
+        conn = sqlite3.connect('./static/data/journal_entries.db')
         curs = conn.cursor()
         curs.execute("INSERT INTO entries(entry_titles, entry_dates, entries) VALUES ((?), (?), (?))", (title, date, entry))
         conn.commit()
@@ -99,7 +99,7 @@ if __name__ == '__main__':
 #         text = request.form['journal-entry-text']
 
 #     # Connect to DB and Insert into DB Columns
-#         conn = sqlite3.connect('./static/data/journal-entries.db')
+#         conn = sqlite3.connect('./static/data/journal_entries.db')
 #         curs = conn.cursor()
 #         curs.execute("INSERT INTO user_entries1 (entry_titles, entry_dates, entry_texts) VALUES ((?), (?), (?))", (title, date, text))
 #         conn.commit()
@@ -108,7 +108,7 @@ if __name__ == '__main__':
 #         conn.close()
 
 #     # Add User Input to DB Rows
-#         conn =  sqlite3.connect('./static/data/journal-entries.db')
+#         conn =  sqlite3.connect('./static/data/journal_entries.db')
 #         curs = conn.cursor()
 #         entries = []
 #         rows = curs.execute("SELECT * FROM user_entries1 ORDER BY entry_dates ASC;")
