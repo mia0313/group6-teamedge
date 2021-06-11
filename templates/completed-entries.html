@@ -10,7 +10,7 @@
 
     <h1>All Entries</h1>
     {% for entry in entries %}
-        <p>{{entry_dates}} : {{entry_titles}}</p>
+        <p>{{entry['date']}} : {{entry['title']}}</p>
     {% endfor %}
 
 
