@@ -58,8 +58,6 @@ def all_entries():
     return render_template('completed-entries.html', entry = entry)    
     
 
-
-    
     
        
 if __name__ == '__main__':
