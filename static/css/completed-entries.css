@@ -2,8 +2,22 @@ body {
     background-image: url(https://eskipaper.com/images/cool-backgrounds-4.jpg);
 }
 
-
+h1{
+    text-align: center;
+    font-family: cursive;
+}
 
 p{
     text-align: center;
+    background-color: white;
+    height: auto;
+    margin: 30px;
+    padding: 30px;
+    overflow-wrap: break-word;
+    overflow: scroll;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: magenta 3px solid;
 }
