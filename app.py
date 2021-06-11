@@ -43,7 +43,7 @@ def all_entries():
         entries.append(entry)
         print(entry)
     conn.close()
-    return render_template('completed-entries.html', entry = entries)    
+    return render_template('completed-entries.html', entries = entries)    
        
        
 if __name__ == '__main__':
