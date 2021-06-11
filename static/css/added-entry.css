@@ -12,6 +12,26 @@ h3{
     text-align: center;
 }
 
-p{
+#user_entry {
     text-align: center;
+    background-color: white;
+    height: auto;
+    margin: 30px;
+    padding: 30px;
+    overflow-wrap: break-word;
+    overflow: scroll;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+button {
+    border-radius: 25px;
 }
