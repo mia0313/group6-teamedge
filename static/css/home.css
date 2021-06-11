@@ -1,8 +1,15 @@
 .j-entry {
     line-height: auto;
     display: inline-block; 
-    width: 210px; 
-    text-align: right;
+    text-align: left;
+    height: 200px;
+    width: 800px;
+}
+
+#entry-area {
+    display: flex;
+    justify-content: center;
+    border: magenta 2px, solid;
 }
 
 h1{
@@ -21,19 +28,27 @@ p {
 
 .j-title {
     align-self: center;
-}
-
-.container {
     display: flex;
     flex-wrap: wrap;
     flex-flow: column wrap;
     align-items: center;
+    width: 800px;
+} 
+
+#title-area {
+    display: flex;
+    justify-content: center;
 }
 
+.j-date {
+    width: 800px;
+    text-align: center;
+}
 
-
-
-
+#date-area {
+    display: flex;
+    justify-content: center;
+}
 /*
  .j-entry {
     line-height: auto;
