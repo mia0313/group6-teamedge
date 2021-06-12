@@ -35,4 +35,5 @@ a {
 
 button {
     border-radius: 25px;
+    border: magenta 2px solid;
 }
