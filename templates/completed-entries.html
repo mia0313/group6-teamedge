@@ -6,25 +6,28 @@
     <link rel= "stylesheet" href = "/static/css/completed-entries.css">
     <title>View Entries</title>
 </head>
+
+<html id = "#top">
 <body>
-
     <h1>All Entries</h1>
-    <a href = "/"><button>Home</button></a>
-
+    <div id = 'h-button'>
+        <a href = "/"><button>Click Here to Write Another Entry</button></a>
+    </div>
     {% for entry in entries %}
         <div id = "view-entries">
             <div id = "view-title-date">
                 <p>{{entry['entry_dates']}} -- {{entry['entry_titles']}}: </p>
-                <br>
-                <br>
             </div>
-            <br>
-            <br>
             <div id = "view-entry-text">
                 <p>{{entry['entry_texts']}}</p>
             </div>
         </div>
     {% endfor %}
-
+    <div id = "jump-btn">
+        <a href = "#top">
+            <button class = "jump-btn">Back to the Top</button>
+        </a>
+    </div>
 </body>
+</html>
 </html>
