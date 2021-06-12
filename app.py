@@ -22,7 +22,7 @@ def cleanDate(date):
     time = day_time[1]
 
     months = {"01": "January", "02": "February", "03": "March", "04": "April", "05": "May", "06": "June", "07": "July", "08": "August", "09": "September", "10": "October", "11": "November", "12": "December"}
-    return months[month] + " " + day + ',' + " " + year + " " + time
+    return months[month] + " " + day + ',' + year + " " + time
 
 # Journal Entries Display Page
 
@@ -52,15 +52,43 @@ def all_entries():
     entries = []
     rows = curs.execute("SELECT * FROM entries ORDER BY entry_dates DESC;")  
     for row in rows:
-        date = row[2]
-        entry = {'rowid': row[0], 'entry_titles': row[1], 'entry_dates': cleanDate, 'entry_texts': row[3]}
+        entry = {'rowid': row[0], 'entry_titles': row[1], 'entry_dates': row[2], 'entry_texts': row[3]}
         entries.append(entry)
         print(entry)
     conn.close()
     return render_template('completed-entries.html', entries = entries)    
     
 
+# @app.route('/all-entries', methods=["GET"])
+# def all_entries():
+#     conn =  sqlite3.connect('./static/data/journal_entries.db')
+#     curs = conn.cursor()
+#     entries = []
+#     rows = curs.execute("SELECT * FROM entries ORDER BY entry_dates DESC;")  
+#     for row in rows:
+#         date = row[2]
+#         entry = {'rowid': row[0], 'entry_titles': row[1], 'entry_dates': cleanDate(date ), 'entry_texts': row[3]}
+#         entries.append(entry)
+#         print(entry)
+#     conn.close()
+#     return render_template('completed-entries.html', entries = entries)    
+    
 
+
+#     @app.route('/all-entries', methods=["GET"])
+# def all_entries():
+#     conn =  sqlite3.connect('./static/data/journal_entries.db')
+#     curs = conn.cursor()
+#     entries = []
+#     rows = curs.execute("SELECT * FROM entries ORDER BY entry_dates DESC;")  
+#     for row in rows:
+#         date = row[2]
+#         entry = {'rowid': row[0], 'entry_titles': row[1], 'entry_dates': cleanDate(date ), 'entry_texts': row[3]}
+#         entries.append(entry)
+#         print(entry)
+#     conn.close()
+#     return render_template('completed-entries.html', entries = entries)    
+    
 
 if __name__ == '__main__':
     app.run(debug = True, host = '0.0.0.0')
