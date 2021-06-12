@@ -7,12 +7,24 @@
     <title>View Entries</title>
 </head>
 <body>
-    <ul>
-        {% for entry in entries %}
-            <p>
-                {{entry['date']}} : {{entry['title']}}
-            </p>
-        {% endfor %}
-    </ul>
+
+    <h1>All Entries</h1>
+    <a href = "/"><button>Home</button></a>
+
+    {% for entry in entries %}
+        <div id = "view-entries">
+            <div id = "view-title-date">
+                <p>{{entry['entry_dates']}} -- {{entry['entry_titles']}}: </p>
+                <br>
+                <br>
+            </div>
+            <br>
+            <br>
+            <div id = "view-entry-text">
+                <p>{{entry['entry_texts']}}</p>
+            </div>
+        </div>
+    {% endfor %}
+
 </body>
 </html>

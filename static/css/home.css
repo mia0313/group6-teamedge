@@ -1,8 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+
 .j-entry {
     line-height: auto;
+    display: inline-block; 
+    text-align: left;
+    height: 200px;
+    width: 800px;
+    padding: 10px;
+    border-radius: 25px;
+    border: magenta 2px solid;
+
+}
+
+#entry-area {
+    display: flex;
+    justify-content: center;
+    border: magenta 2px, solid;
 }
 
 h1{
+    font-family: "Tangerine", cursives;
+    font-size: 50px;
     color: magenta;
     text-align: center;
 }
@@ -18,23 +36,49 @@ p {
 
 .j-title {
     align-self: center;
-}
-
-.j-entry { 
-    display: inline-block; 
-    width: 210px; 
-    text-align: right;
-}
-
-.container {
     display: flex;
     flex-wrap: wrap;
     flex-flow: column wrap;
     align-items: center;
+    width: 800px;
+    padding: 10px;
+    border-radius: 25px;
+    border: magenta 2px solid;
+} 
+
+#title-area {
+    display: flex;
+    justify-content: center;
 }
 
+.j-date {
+    width: 800px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 25px;
+    border: magenta 2px solid;
+}
 
+#date-area {
+    display: flex;
+    justify-content: center;
+}
 
+#buttons {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+
+.s-button {
+    border-radius: 25px;
+    border: magenta 2px solid;
+}
+
+button {
+    border-radius: 25px;
+    border: magenta 2px solid;
+}
 
 
 /*

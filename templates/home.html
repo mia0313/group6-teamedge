@@ -10,16 +10,28 @@
 
     <form action = "/submitted" method = "POST">
     <h1>Journal Entry</h1>
-        <p>Enter a Title for Your Journal Entry</p>
-        <input class = "container" type = "text" name = "journal-entry-title" />
-        <p>Enter Today's Date and Time for Your Journal Entry</p>
-        <input class = "j-date" type= "datetime-local" name = "journal-entry-date" />
-        <p>Write Your Journal Entry Below!</p>
-        <input class = "j-entry" type = "text" name = "journal-entry-text" height = "100" />
-        <input class = "s-button" type = "submit" value= "Submit"/>
+    <p>Enter a Title for Your Journal Entry</p>
+        <div id = "title-area">
+            <input class = "j-title" type = "text" placeholder = "Journal Entry Title" name = "journal-entry-title" />
+        </div>
+    <p>Enter Today's Date and Time for Your Journal Entry</p>
+        <div id = "date-area">
+            <input class = "j-date" type= "datetime-local" name = "journal-entry-date" />
+        </div>
+    <p>Write Your Journal Entry Below!</p>
+        <div id = "entry-area">
+            <textarea class = "j-entry" type = "text" placeholder = "Write Your Journal Entry Here!" name = "journal-entry-text" height = "100"></textarea>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div id = "buttons">
+            <input class = "s-button" type = "submit" value= "Submit Your Entry" />
+
+            <a href="/all-entries"> <button> View All Entries </button></a>
+        </div>
     </form>
 
-    <!-- <p><a href="/completed-entries">See all of your entries</a></p> -->
 
 </body>
 </html>
