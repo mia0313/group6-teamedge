@@ -17,11 +17,12 @@ p{
 
 #view-entries {
     background-color: white;
-    height: auto;
+    height: 150px;
     margin: 30px;
     padding: 30px;
-    /* overflow-wrap: break-word;
     overflow: scroll;
+    overflow-x: hidden;
+    /* overflow-wrap: break-word;
     display: flex;
     justify-content: center;
     align-items: center; */
