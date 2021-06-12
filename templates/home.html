@@ -16,7 +16,7 @@
         </div>
     <p>Enter Today's Date and Time for Your Journal Entry</p>
         <div id = "date-area">
-            <input class = "j-date" type= "datetime-local" name = "journal-entry-date" />
+            <input class = "j-date" type= "datetime-local" name = "journal-entry-date" required/>
         </div>
     <p>Write Your Journal Entry Below!</p>
         <div id = "entry-area">
@@ -24,14 +24,14 @@
         </div>
         <br>
         <br>
-        <br>
-        <div id = "buttons">
+        <div id = "s-button">
             <input class = "s-button" type = "submit" value= "Submit Your Entry" />
-
-            <a href="/all-entries"> <button> View All Entries </button></a>
-        </div>
+        </div> 
     </form>
-
+    <br>
+        <div id = "view-all-button">
+            <a href="/all-entries"> <button class = "view-all-button"> View All Entries </button></a>
+        </div>
 
 </body>
 </html>
