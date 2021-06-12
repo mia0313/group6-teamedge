@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+
 .j-entry {
     line-height: auto;
     display: inline-block; 
@@ -17,6 +19,8 @@
 }
 
 h1{
+    font-family: "Tangerine", cursives;
+    font-size: 50px;
     color: magenta;
     text-align: center;
 }
