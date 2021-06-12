@@ -52,7 +52,7 @@ def all_entries():
     entries = []
     rows = curs.execute("SELECT * FROM entries ORDER BY entry_dates DESC;")  
     for row in rows:
-        entry = {'rowid': row[0], 'entry_titles': row[1], 'entry_dates': row[2], 'entry_texts': row[3]}
+        entry = {'rowid': row[0], 'entry_titles': row[1], 'entry_dates': cleanDate(row[2]), 'entry_texts': row[3]}
         entries.append(entry)
         print(entry)
     conn.close()
