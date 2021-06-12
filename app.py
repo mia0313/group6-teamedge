@@ -26,8 +26,7 @@ def display_entry():
         curs = conn.cursor()
         curs.execute("INSERT INTO entries(entry_titles, entry_dates, entry_texts) VALUES ((?), (?), (?))", (title, date, text))
         conn.commit()
-
-    conn.close()
+        conn.close()
     return render_template('added-entry.html', entry_titles = title, entry_dates = date, entry_texts = text)  
         
 

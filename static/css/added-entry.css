@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+
 body {
     background-image: url(https://eskipaper.com/images/cool-backgrounds-4.jpg);
 }
 
 h1{
+    font-family: "Tangerine", cursives;
+    font-size: 50px;
     color: magenta;
     text-align: center;
 }
@@ -35,4 +39,5 @@ a {
 
 button {
     border-radius: 25px;
+    border: magenta 2px solid;
 }
