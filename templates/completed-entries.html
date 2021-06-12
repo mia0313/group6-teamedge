@@ -11,8 +11,16 @@
     <h1>All Entries</h1>
     {% for entry in entries %}
         <div id = "view-entries">
-            <p>{{entry['entry_dates']}}: {{entry['entry_titles']}}</p>
-            <p>{{entry['entry_texts']}}</p>
+            <div id = "view-title-date">
+                <p>{{entry['entry_dates']}} -- {{entry['entry_titles']}}: </p>
+                <br>
+                <br>
+            </div>
+            <br>
+            <br>
+            <div id = "view-entry-text">
+                <p>{{entry['entry_texts']}}</p>
+            </div>
         </div>
     {% endfor %}
 
