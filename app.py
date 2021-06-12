@@ -34,8 +34,7 @@ def all_entries():
     conn =  sqlite3.connect('./static/data/journal_entries.db')
     curs = conn.cursor()
     entries = []
-    rows = curs.execute("SELECT *return months[month] + day + ',' + year + " " + time FROM entries ORDER BY entry_dates DESC;")
-    cleanDate(date)    
+    rows = curs.execute("SELECT * FROM entries ORDER BY entry_dates DESC;")  
     for row in rows:
         entry = {'rowid': row[0], 'entry_titles': row[1], 'entry_dates': row[2], 'entry_texts': row[3]}
         entries.append(entry)
